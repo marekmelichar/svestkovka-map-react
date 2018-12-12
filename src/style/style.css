@@ -1,0 +1,766 @@
+/*
+  HEADER
+*/
+
+.take-logs {
+  background-color: #2a3136;
+  padding: 1em 2em;
+  position: absolute;
+  margin: 40px 0 0 -50px;
+  color: #fff;
+}
+
+.display-none {
+  display: none;
+}
+
+
+
+
+/*
+  HEADER
+*/
+
+.take-logs {
+  background-color: #2a3136;
+  padding: 1em 2em;
+  position: absolute;
+  margin: 40px 0 0 -50px;
+  color: #fff;
+}
+
+
+
+
+
+/* temporary removal of border right of Transfer Icon */
+.theIcon:last-of-type .action:first-child {
+  border-right: none;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal-buttons {
+  text-align: right;
+}
+
+.float-none {
+  float: none;
+}
+
+.pkgNameIcon {
+  margin-left: 2em;
+}
+
+.modalContent .two-cols-row {
+  float: none;
+  display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.modalContent .two-cols-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modalContent .two-cols-row .current-files-wrapper {
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
+.current-files-wrapper {
+  text-align: left;
+}
+
+.current-files-wrapper .row {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.current-files-wrapper .row .col-left {
+  display: inline-block;
+  width: 60%;
+  white-space: normal;
+  text-align: left;
+}
+
+.current-files-wrapper .row .col-right {
+  display: inline-block;
+  width: 40%;
+  white-space: normal;
+  text-align: left;
+}
+
+.added-files-wrapper {
+  width: 50%;
+  display: block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#checkbox:disabled + .checkbox-div {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/***********************
+  Drag and Drop area
+***********************/
+
+.drop-zone-hide {
+  /*display: none;*/
+  background: #bbb;
+  color: #fff;
+  height: 200px;
+}
+
+.drop-zone-show {
+  background: #74b12c;
+  color: #fff;
+  height: 200px;
+}
+
+#dragbox {
+  position: relative;
+}
+
+.dragbox-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/***********************
+  Modal window
+***********************/
+
+/*#modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}*/
+
+#modal {
+  /*display: none;*/
+  display: block;
+  /*visibility: visible;*/
+  /*opacity: 1;*/
+  /*transition: opacity 0.3s, visibility 0.3s;*/
+
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.65); /* Black w/ opacity */
+  z-index: 990;
+}
+
+/*#modal.activated .modalContent {*/
+#modal .modalContent {
+  background-color: #fefefe;
+  margin: 2.5% auto;
+  padding: 5em 2em 2em 2em;
+  border-radius: 0.25em;
+  width: 90%;
+  z-index: 991;
+}
+
+/*#modal.activated {*/
+  /*display: block;*/
+/*}*/
+
+/*#modal.activated .closeModal {*/
+  /*font-size: 2em;
+  float: right;
+  border: 1px solid grey;
+  padding: 0.4em;
+  border-radius: 50%;
+  margin-top: -1.5em;*/
+  /*font-size: 1.5em;
+  float: right;
+  margin-top: -2em;
+}*/
+
+.modalContent form {
+  margin: 1em 0 4em 0;
+}
+
+.modalContent table {
+  margin-bottom: 2em;
+}
+
+#modal input[type=file] {
+  visibility: visible;
+  display: block;
+}
+
+.message-dialog .modal-buttons {
+  margin-top: 30px;
+}
+
+.message-dialog .message {
+  clear: both;
+}
+
+.message-dialog .message .message-content {
+  width: 50%;
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.message-dialog .toggle .toggle-div {
+  margin: 0 4px 0 0;
+}
+
+
+
+
+.status-icon {
+    font-size: 21px;
+    margin-right: 8px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+
+/***********************
+   Spinner
+***********************/
+
+/*.progress-bar {
+  width: 75%;
+  float: left;
+}*/
+
+.validation-results {
+  position: relative;
+}
+
+.validation-results .spinner-wrapper {
+  margin: -30px 0 0 350px;
+  width: 20px;
+  height: 20px;
+  float: none;
+  position: relative;
+  background: transparent;
+}
+
+.validation-results .spinner-wrapper .spinner-loading {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+/***********************
+   activate/deactivate icons in Action Group component
+***********************/
+.action.enabled:first-child {
+  cursor: pointer;
+}
+
+.action.enabled:first-child img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.action {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.action.activated {
+  cursor: pointer;
+}
+
+.action.enabled {
+  pointer-events: auto;
+}
+
+.action img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+
+
+.action.activated img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.action-img {
+  height: 40px;
+}
+
+
+
+
+
+
+
+
+
+/***********************
+   context menu
+***********************/
+
+.context-menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  padding: 12px 0;
+  width: 240px;
+  background-color: #fff;
+  border: solid 1px #dfdfdf;
+  box-shadow: 1px 1px 2px #cfcfcf;
+}
+
+.context-menu--active {
+  display: block;
+}
+
+.context-menu__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu__item {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.context-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.context-menu__link {
+  display: block;
+  padding: 4px 12px;
+  color: #3c8708;
+  text-decoration: none;
+}
+
+.context-menu__link:hover {
+  color: #fff;
+  background-color: #3c8708;
+}
+
+
+
+
+
+
+/***********************
+  color definition
+***********************/
+.status-ready {
+    background-color: #AAFF88
+}
+
+
+.status-working {
+    background-color: #FFEE88
+}
+
+
+.status-error {
+    background-color: #FFAA88
+}
+
+
+
+
+
+
+/***********************
+  fonts definition
+***********************/
+
+strong {
+  font-family: "Open Sans webfont", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/***********************
+  modified
+***********************/
+
+.action-group:last-of-type {
+  border-right: none;
+}
+
+.action-groups {
+  padding: 10px 20px 0 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+  width: auto;
+}
+
+.action-groups .action:first-child {
+  border-right: 1px solid #ced8dd;
+}
+
+.action-groups .action {
+  padding: 3px 20px;
+}
+
+.action-groups .flat.status-error-text.clearfix {
+  position: absolute;
+  right: 10%;
+  top: 0;
+}
+
+/*article {
+  padding: 0 10px;
+}*/
+
+table {
+  margin-top: 2em;
+}
+
+
+
+
+
+/***********************
+  helpers
+***********************/
+
+.text-center {
+  text-align: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+
+
+
+
+
+
+/***********************
+  Spinner component
+***********************/
+
+.spinner-wrapper {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  float: none;
+  position: absolute;
+  background: transparent;
+}
+
+.spinner-wrapper .spinner-loading {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: #3c8708;
+  animation: rotate360 2s linear 0s infinite;
+}
+
+td .spinner-wrapper {
+  margin: 0;
+  width: 20px;
+  height: 10px;
+  float: left;
+  position: relative;
+  background: transparent;
+}
+
+td .spinner-wrapper .spinner-loading {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5px;
+  bottom: 0;
+  margin: 0;
+  border: 5px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: #3c8708;
+  animation: rotate360 2s linear 0s infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.add-files-modal .spinner-wrapper {
+  right: 0;
+  top: -8px;
+}
+
+
+
+
+
+
+
+
+
+/***********************
+  Candybar striping on progress background
+***********************/
+
+.progress-bar {
+  position: relative;
+  top: 20px;
+  width: 40em;
+  margin: 0 auto;
+}
+
+/*.progress-bar > span:after {*/
+.progress-bar .progressWrap > .candyBar:after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, .025) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(0, 0, 0, .025) 50%,
+    rgba(0, 0, 0, .025) 75%,
+    transparent 75%,
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.link, .link:hover, .link:active {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.already-validated-files-list {
+  float: right;
+  margin: 1em;
+  font-weight: 700;
+}
+
+.already-validated-files-list .icon {
+  /*margin: 1em 0 0 1em;*/
+  margin-right: 1em;
+}
+
+
+
+
+
+[data-percentage="55"] {
+    width: 55%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.delete-confirmation-modal h3 {
+  margin-bottom: 28px;
+}
+
+.delete-confirmation-modal .spinner-wrapper {
+  margin: -26px auto 0 250px;
+  width: 30px;
+  height: 30px;
+  float: none;
+  position: absolute;
+  background: transparent;
+}
+
+.delete-confirmation-modal .spinner-wrapper .spinner-loading {
+  left: 0;
+  bottom: 0;
+}
+
+.loading-text-inside-progress-bar {
+  z-index: 2;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+#ask_to_replace_button {
+  background-color: #e6aa14;
+  color: #fff;
+  border-bottom: 1px solid #9a720d;
+}
+
+#ask_to_replace_button:after {
+  content: '✔';
+  margin: -2px 0 0 15px;
+  font-size: 14px;
+  position: relative;
+}
+
+#add_dialog_no_replacing_action_btn:after {
+  content: '✕';
+  margin: -2px 0 0 15px;
+  font-size: 14px;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show-before-transfer-correction-dialog ul {
+  margin: 1.5rem 0 0 0;
+}
+
+.show-before-transfer-correction-dialog ul li {
+  margin: 0.5rem 0 0 0;
+}
+
+.show-before-transfer-correction-dialog h2 {
+  margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progressContainer[data-progress]:after {
+  content: attr(data-progress);
+}
+
+.progressContainer[data-progress][data-text]:after {
+  content: attr(data-text) " " attr(data-progress);
+}
+
+
+
+
+
+
+
+
+
+
+.modal-buttons .spinner-wrapper {
+  right: 240px;
+}
